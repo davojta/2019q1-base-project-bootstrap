@@ -1,0 +1,23 @@
+{
+  "name": "2019q1-base-project-bootstrap",
+  "version": "1.0.0",
+  "description": "## goals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davojta/2019q1-base-project-bootstrap.git"
+  },
+  "keywords": [
+    "boostrap",
+    "rss"
+  ],
+  "author": "davojta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davojta/2019q1-base-project-bootstrap/issues"
+  },
+  "homepage": "https://github.com/davojta/2019q1-base-project-bootstrap#readme"
+}
