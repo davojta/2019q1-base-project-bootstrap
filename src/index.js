@@ -1,5 +1,5 @@
-// eslint-disable-next-line
-console.log("hello world!");
+// eslint-disable-next-line no-console
+console.log('hello world!');
 
 // function init() {
 //   alert("start!");
