@@ -9,14 +9,18 @@
 
     <h1>Hello, RSS!</h1>
   
-<script  src="./src/index.js"></script>
+
 <!-- Required styles for MDC Web -->
 <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 
 <!-- Render textfield component -->
-<button class="mdc-button">
-  <span class="mdc-button__label">Button</span>
+<button class="mdc-button" id="color_picker">
+  <span class="mdc-button__label">Color Picker</span>
 </button>
+
+<div><span>
+  Chosen color: 
+</span><span id="chosen_color"> none </span></div>
 
 <div style="width: 20px;height: 20px; background-color: blue; margin-bottom: 50px;">
 
@@ -32,5 +36,6 @@
 <script>
   mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
 </script>
+<script  src="./src/index.js"></script>
   </body>
 </html>
