@@ -22,7 +22,7 @@ colorPickerEl.addEventListener('click', (event) => {
 const headerEl = document.getElementById('header');
 
 headerEl.addEventListener('click', () => {
-  console.log('header click')
+  console.log('header click');
     window.state.currentTool = 'none';
     colorPickerEl.classList.remove('highlight-color-picker');
 });
