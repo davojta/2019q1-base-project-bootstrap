@@ -16,6 +16,15 @@ window.state = {
 colorPickerEl.addEventListener('click', (event) => {
   console.log('click', event);
   window.state.currentTool = 'colorPicker';
+  colorPickerEl.classList.add('highlight-color-picker');
+});
+
+const headerEl = document.getElementById('header');
+
+headerEl.addEventListener('click', () => {
+  console.log('header click')
+    window.state.currentTool = 'none';
+    colorPickerEl.classList.remove('highlight-color-picker');
 });
 
 document.addEventListener('click', (event) => {
