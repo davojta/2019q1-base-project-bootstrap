@@ -10,14 +10,18 @@ console.log('colorPickerEl', colorPickerEl);
 
 // need to remove from window after dev end
 window.state = {
-    currentTool: 'colorPicker',
+  currentTool: '',
 };
 
-colorPickerEl.addEventListener('click', function(event) {
-    console.log('click', event);
+colorPickerEl.addEventListener('click', (event) => {
+  console.log('click', event);
+  window.state.currentTool = 'colorPicker';
 });
 
 document.addEventListener('click', (event) => {
-    console.log('click', event);
+  if (window.state.currentTool === 'colorPicker') {
+      const colorValueEl = document.getElementById('chosen_color');
+      colorValueEl.textContent = event.target.style.backgroundColor || 'none';
     console.log('color', event.target.style.backgroundColor);
+  }
 });
