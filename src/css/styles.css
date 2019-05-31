@@ -1,3 +1,15 @@
 body {
     background-color: red;
 }
+
+.el1 {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}
+
+.el2 {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
