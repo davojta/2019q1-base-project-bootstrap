@@ -1,12 +1,12 @@
 const { draw, drawOnCanvas } = require('./utils.js');
+const { clickHandler } = require('./events');
 
 import './css/styles.css';
 
+
 const initDom = () => {
   document.querySelectorAll('.el1').forEach(el => {
-    el.addEventListener('click', () => {
-      el.style.backgroundColor = '#ff8000';
-    });
+    el.addEventListener('click', clickHandler(el))
   });
 }
 
