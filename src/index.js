@@ -1,4 +1,4 @@
-import { draw, drawOnCanvas } from './utils.js';
+const { draw, drawOnCanvas } = require('./utils.js');
 
 import './css/styles.css';
 
@@ -26,7 +26,10 @@ const init = () => {
   // to extract colors from dom
   var domFrameMatcher = [[['.el1']], [['.el2']]];
 
-  var defaultFrame = [[['fff']], [['fff']]];
+  var defaultFrame = [
+    [['fff']], 
+    [['fff']]
+  ];
 
   const getFrames = domFrames => {
     const frames = [];

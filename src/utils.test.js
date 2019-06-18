@@ -1,11 +1,14 @@
 
 const {  draw, drawOnCanvas } = require('./utils.js')
 
-
-function sum(a, b) {
-  return a + b;
-}
-
 test('test utils', () => {
-  expect(draw([], drawOnCanvas)).toBe(3);
+  // setup
+  const mockFn = jest.fn();
+  var defaultFrame = [[['fff']], [['fff']]];
+ 
+  // action
+  draw(defaultFrame, mockFn)
+
+  // assessment
+  expect(mockFn).toHaveBeenCalled();
 });

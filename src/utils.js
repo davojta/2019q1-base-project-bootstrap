@@ -1,4 +1,4 @@
-export const drawOnCanvas = ({ style, x1, y1, x2, y2 }) => {
+module.exports.drawOnCanvas = ({ style, x1, y1, x2, y2 }) => {
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
 
@@ -7,9 +7,11 @@ export const drawOnCanvas = ({ style, x1, y1, x2, y2 }) => {
 }
 
 
-export const draw = (frame, drawOnCanvas) => {
+module.exports.draw = (frame, drawOnCanvas) => {
+  console.log('frame', frame);
     frame.forEach((row, i) => {
         row.forEach((column, j) => {
+          console.log('drawOnCanvas');
           drawOnCanvas({
               style: column,
               x1: 0,
