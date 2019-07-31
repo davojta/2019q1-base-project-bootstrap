@@ -1,8 +1,8 @@
-# 2019q1-base-project-bootstrap
+# 2019UZ-setup-webpack
 
 ## goals
 
-* base structure
-* simple web server
-* prettier
-* eslint
+* [x] setup webpack
+* [x] setup dev server
+* [X] split code to modules
+* [ ] something else
