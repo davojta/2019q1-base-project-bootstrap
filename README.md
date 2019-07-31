@@ -4,5 +4,5 @@
 
 * [x] setup webpack
 * [x] setup dev server
-* [ ] split code to modules
+* [X] split code to modules
 * [ ] something else
