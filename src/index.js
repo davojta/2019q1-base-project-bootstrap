@@ -1,3 +1,5 @@
+import './css/styles.css';
+
 // eslint-disable-next-line no-console
 console.log('hello world!');
 
@@ -70,26 +72,26 @@ function draw(frame) {
     //   ctx.clearRect(45, 45, 60, 60);
     //   ctx.strokeRect(50, 50, 50, 50);
     }
-  }
-  let count = 0;
+}
+let count = 0;
 
-  const startAnimation = () => {
-      const frame1 = document.querySelector('.frame1');
-      const frame2 = document.querySelector('.frame2');
-      const frame3 = document.querySelector('.frame3');
+const startAnimation = () => {
+    const frame1 = document.querySelector('.frame1');
+    const frame2 = document.querySelector('.frame2');
+    const frame3 = document.querySelector('.frame3');
 
-      const domFrames = [frame1, frame2, frame3];
+    const domFrames = [frame1, frame2, frame3];
 
-      setInterval(() => {
-        const frames = getFrames(domFrames);
-        const frame = frames[count % 3 ];
-        // const frame = frames[0 ];
-        draw(frame);
-        count++
-      }, 1000/5)
-  }
+    setInterval(() => {
+      const frames = getFrames(domFrames);
+      const frame = frames[count % 3 ];
+      // const frame = frames[0 ];
+      draw(frame);
+      count++
+    }, 1000/5)
+}
 
 
-  document.getElementById('draw').addEventListener('click', () => {
-    startAnimation();
-  })
+document.getElementById('draw').addEventListener('click', () => {
+  startAnimation();
+})
