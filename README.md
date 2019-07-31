@@ -2,7 +2,7 @@
 
 ## goals
 
-* [ ] setup webpack
+* [*] setup webpack
 * [ ] setup dev server
 * [ ] split code to modules
 * [ ] something else
