@@ -3,6 +3,6 @@
 ## goals
 
 * [x] setup webpack
-* [ ] setup dev server
+* [x] setup dev server
 * [ ] split code to modules
 * [ ] something else
