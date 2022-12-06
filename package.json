@@ -30,7 +30,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
-    "http-server": "^0.11.1",
+    "http-server": "^0.11.2",
     "prettier": "1.16.4"
   }
 }
